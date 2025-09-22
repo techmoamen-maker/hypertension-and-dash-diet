@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypertension AI Deep Dive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scrollbar-width: thin;
+            scrollbar-color: #0ea5e9 #0c1a2e;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0c1a2e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #0ea5e9;
+            border-radius: 10px;
+            border: 2px solid #0c1a2e;
+        }
+        .font-spacemono {
+            font-family: 'Space Mono', monospace;
+        }
+        .glow-text {
+            text-shadow: 0 0 5px currentColor;
+        }
+        .card-clip {
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+        }
+        .card-glow {
+             box-shadow: 0 0 15px rgba(14, 165, 233, 0.2), 0 0 30px rgba(14, 165, 233, 0.1);
+        }
+         .card-glow:hover {
+             box-shadow: 0 0 25px rgba(14, 165, 233, 0.4), 0 0 40px rgba(14, 165, 233, 0.2);
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px) scale(0.98);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .table-clip {
+             clip-path: polygon(0 0, 100% 0, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+<body class="bg-[#030712] text-gray-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
